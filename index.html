@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bamboo Residences - Larnaca</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #2C3E50;
+            background-color: #FAFAFA;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #34495E, #2C3E50);
+            color: white;
+            text-align: center;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('./images/my-photo2.png');
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+
+        .header-content {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 3rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            max-width: 800px;
+            margin: 0 1rem;
+            z-index: 1;
+        }
+        
+        header * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #E0E0E0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background-color: #D4AF37;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid transparent;
+        }
+        
+        .cta-button:hover {
+            background-color: transparent;
+            border-color: #D4AF37;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        section {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .project-description {
+            text-align: center;
+            margin-bottom: 6rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2C3E50;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+        .apartments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+        
+        .apartment-type {
+            background-color: white;
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .apartment-type:hover {
+            transform: translateY(-10px);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature img {
+            width: 50px;
+            height: 50px;
+            margin-left: 1.5rem;
+        }
+        
+        footer {
+            background-color: #34495E;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-top: 6rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            color: #E0E0E0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="header-content">
+            <h1>Bamboo 1 + 2 Residences</h1>
+            <p class="subtitle">חיים של יוקרה בלרנקה, קפריסין</p>
+            <a href="#" class="cta-button">צרו קשר למטה</a>
+        </div>
+    </header>
+
+    <section class="project-description">
+        <h2>על הפרויקט</h2>
+        <p>Bamboo Residences הוא פרויקט בן שתי קומות הכולל 7 דירות מרווחות ואלגנטיות. הפרויקט ממוקם באזור המתפתח של ליבדיה, לרנקה, במרחק הליכה מבתי ספר, סופרמרקטים ושכונות חדשות.</p>
+        <img src="images/my-photo.png" alt="הדמיית פרויקט" width="600" style="position: absolute; right: 0;">>
+        <img src="images/my-photo3.png" alt="הדמיית פרויקט" width="600" style="position: absolute; left: 0;">>
+        <p>שלוש דירות בקומה העליונה כוללות גן גג עם נוף מדהים לאזור.</p>
+    </section>
+
+    <section class="apartments-grid">
+        <div class="apartment-type">
+            <h3>דירות חדר שינה אחד</h3>
+            <p>86.90 מ"ר</p>
+            <p>חדר אמבטיה אחד</p>
+            <p>3 יחידות זמינות</p>
+        </div>
+        <div class="apartment-type">
+            <h3>דירות 2 חדרי שינה</h3>
+            <p>עד 133.45 מ"ר</p>
+            <p>2 חדרי אמבטיה</p>
+            <p>4 יחידות זמינות</p>
+        </div>
+        <div class="apartment-type">
+            <h3>דירות גג מיוחדות</h3>
+            <p>כולל גן גג פרטי</p>
+            <p>נוף פנורמי לאזור</p>
+            <p>3 יחידות זמינות</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>מפרט טכני</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="בידוד">
+                <p>בידוד וחלונות יעילים אנרגטית</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="ריצוף">
+                <p>אריחים ופרקט אירופאי יוקרתי</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="סניטריה">
+                <p>כלים סניטריים לבנים ואביזרי Grohe יוקרתיים</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="מטבח">
+                <p>מטבח מודרני ופונקציונלי בהתאמה אישית</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="אבטחה">
+                <p>דלתות כניסה ראשיות מאובטחות</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="חניה">
+                <p>חניה מקורה פרטית וחדרי אחסון</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="אינטרנט">
+                <p>הכנה לאינטרנט מהיר</p>
+            </div>
+            <div class="feature">
+                <img src="/api/placeholder/50/50" alt="מיזוג">
+                <p>הכנה למיזוג אוויר</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>מיקום אסטרטגי</h2>
+        <p>הפרויקט ממוקם באזור ליבדיה המתפתח במהירות, עם גישה קלה ומהירה למרכז העיר לרנקה, לחוף הים ולמרינה החדשה של לרנקה. קרבה לפרויקטים עתידיים כמו קו החוף "Land of Tomorrow" הופכת את Bamboo Residences להזדמנות השקעה אטרקטיבית.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Bamboo Residences</p>
+        <p>0507850840 - צרו קשר למידע נוסף</p>
+    </footer>
+</body>
+</html>
